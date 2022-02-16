@@ -19,7 +19,7 @@ public class SendResult {
     private static final String HEADER_AUTHORIZATION = "Authorization";
     private static final MediaType JSON
             = MediaType.parse("application/json; charset=utf-8");
-
+/*
     @Test(dependsOnGroups = "transform")
     public void testResult(ITestContext context) throws Exception {
         Stats stats = (Stats) context.getAttribute("result");
@@ -45,5 +45,5 @@ public class SendResult {
         Assert.assertNotNull(result);
 
 
-    }
+    }*/
 }
