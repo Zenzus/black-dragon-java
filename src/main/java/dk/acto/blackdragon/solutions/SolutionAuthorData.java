@@ -1,12 +1,12 @@
-package dk.acto.blackdragon.service;
+package dk.acto.blackdragon.solutions;
 
 import dk.acto.blackdragon.model.AuthorData;
+import dk.acto.blackdragon.service.AuthorDataFactory;
 import lombok.SneakyThrows;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 
-public class ImAuthorData implements AuthorDataFactory{
+public class SolutionAuthorData implements AuthorDataFactory {
 
   @SneakyThrows
   @Override

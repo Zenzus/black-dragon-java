@@ -1,5 +1,6 @@
 package dk.acto.blackdragon.service;
 
+import dk.acto.blackdragon.solutions.SolutionDataFetcher;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
@@ -15,7 +16,7 @@ public class DataFetcherTest {
     @Test(groups = "fetch")
     public void testFetchData(ITestContext context) throws Exception {
 
-        ImDataFetcher subject = new ImDataFetcher() {
+        SolutionDataFetcher subject = new SolutionDataFetcher() {
 
         };
 

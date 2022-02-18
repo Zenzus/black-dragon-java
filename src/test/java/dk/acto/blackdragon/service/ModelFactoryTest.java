@@ -1,6 +1,7 @@
 package dk.acto.blackdragon.service;
 
 import dk.acto.blackdragon.model.Model;
+import dk.acto.blackdragon.solutions.SolutionModelFactory;
 import io.vavr.collection.List;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
@@ -17,7 +18,7 @@ public class ModelFactoryTest {
 
         String data = String.valueOf(context.getAttribute("data"));
 
-        ImModel<Model> subject = new ImModel<Model>() {
+        SolutionModelFactory<Model> subject = new SolutionModelFactory<Model>() {
         };
 
         List<Model> result = subject.parse(data);

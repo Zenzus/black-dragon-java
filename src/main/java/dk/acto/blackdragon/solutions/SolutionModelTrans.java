@@ -1,14 +1,14 @@
-package dk.acto.blackdragon.service;
+package dk.acto.blackdragon.solutions;
 
 import dk.acto.blackdragon.model.Model;
 import dk.acto.blackdragon.model.Stats;
+import dk.acto.blackdragon.service.ModelTransformer;
 import io.vavr.collection.List;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.ArrayList;
 
-public class ImModelTrans implements ModelTransformer{
+public class SolutionModelTrans implements ModelTransformer {
 
 
     @Override

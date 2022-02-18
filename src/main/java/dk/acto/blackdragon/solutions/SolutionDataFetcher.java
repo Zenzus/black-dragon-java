@@ -1,5 +1,6 @@
-package dk.acto.blackdragon.service;
+package dk.acto.blackdragon.solutions;
 
+import dk.acto.blackdragon.service.DataFetcher;
 import okhttp3.*;
 
 
@@ -13,7 +14,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ImDataFetcher implements DataFetcher{
+public class SolutionDataFetcher implements DataFetcher {
     @Override
     public String fetchData(URL url) {
         String path = "d:\\tmp.csv";

@@ -1,23 +1,13 @@
-package dk.acto.blackdragon.service;
+package dk.acto.blackdragon.solutions;
 
-import com.opencsv.bean.CsvToBean;
-import com.opencsv.bean.CsvToBeanBuilder;
-import dk.acto.blackdragon.model.AuthorData;
 import dk.acto.blackdragon.model.Model;
+import dk.acto.blackdragon.service.ModelFactory;
 import io.vavr.collection.List;
 import lombok.SneakyThrows;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.file.Files;
-import java.sql.Array;
 import java.util.*;
 
-public class ImModel<T>  implements ModelFactory{
+public class SolutionModelFactory<T>  implements ModelFactory {
 
     @SneakyThrows
     @Override

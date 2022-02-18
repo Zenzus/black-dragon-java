@@ -2,6 +2,7 @@ package dk.acto.blackdragon.service;
 
 import dk.acto.blackdragon.model.Model;
 import dk.acto.blackdragon.model.Stats;
+import dk.acto.blackdragon.solutions.SolutionModelTrans;
 import io.vavr.collection.List;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
@@ -19,7 +20,7 @@ public class ModelTransformerTest {
 
         List<Model> models = (List<Model>) context.getAttribute("models");
 
-        ImModelTrans subject = new ImModelTrans() {
+        SolutionModelTrans subject = new SolutionModelTrans() {
         };
 
         Stats result = subject.transform(models);

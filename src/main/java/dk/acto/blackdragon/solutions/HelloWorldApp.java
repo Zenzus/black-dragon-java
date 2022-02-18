@@ -1,4 +1,4 @@
-package dk.acto.blackdragon.service;
+package dk.acto.blackdragon.solutions;
 
 
 import dk.acto.blackdragon.model.Model;
@@ -12,19 +12,19 @@ class HelloWorldApp {
     public static void main(String[] args) {
         System.out.println("Hello World!"); // Display the string.
 
-        ImAuthorData subject = new ImAuthorData() {};
+        SolutionAuthorData subject = new SolutionAuthorData() {};
         subject.create();
 
 
-        ImDataFetcher kage = new ImDataFetcher();
+        SolutionDataFetcher kage = new SolutionDataFetcher();
         String result = kage.fetchData(new URL("https://dragon.acto.dk/test.csv"));
 
 
-        ImModel model = new ImModel();
+        SolutionModelFactory model = new SolutionModelFactory();
 
         List<Model> models = model.parse(result);
 
-        ImModelTrans trans = new ImModelTrans();
+        SolutionModelTrans trans = new SolutionModelTrans();
 
         trans.transform(models);
 
