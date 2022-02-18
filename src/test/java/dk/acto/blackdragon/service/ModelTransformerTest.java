@@ -19,11 +19,7 @@ public class ModelTransformerTest {
 
         List<Model> models = (List<Model>) context.getAttribute("models");
 
-        ModelTransformer<Model, Stats> subject = new ModelTransformer<Model, Stats>() {
-            @Override
-            public Stats transform(List<Model> model) {
-                return null;
-            }
+        ImModelTrans subject = new ImModelTrans() {
         };
 
         Stats result = subject.transform(models);

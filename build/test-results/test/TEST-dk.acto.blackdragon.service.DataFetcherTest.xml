@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dk.acto.blackdragon.service.DataFetcherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-16T21:24:12" hostname="MainPC" time="0.448">
+<testsuite name="dk.acto.blackdragon.service.DataFetcherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-18T16:41:57" hostname="MainPC" time="4.166">
   <properties/>
-  <testcase name="testFetchData[0](org.testng.TestRunner@6872557d)" classname="dk.acto.blackdragon.service.DataFetcherTest" time="0.448"/>
+  <testcase name="testFetchData[0](org.testng.TestRunner@76262f7e)" classname="dk.acto.blackdragon.service.DataFetcherTest" time="4.166"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

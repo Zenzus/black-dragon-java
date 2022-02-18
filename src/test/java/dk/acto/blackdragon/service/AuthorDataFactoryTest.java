@@ -16,25 +16,6 @@ public class AuthorDataFactoryTest {
     public void testCreate(ITestContext context) {
 
         ImAuthorData subject = new ImAuthorData() {
-
-            @Override
-            public AuthorData create() {
-                String linkIn = "https://www.linkedin.com/in/jonas-v-b-hein/";
-                String gitHub = "https://github.com/Zenzus/black-dragon-java";
-
-                AuthorData data = null;
-                try {
-                    data = AuthorData.builder().
-                            name("Jonas").
-                            linkedInProfile(new URL(linkIn)).
-                            solutionRepository(new URL(gitHub)).
-                            build();
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(data);
-                return data;
-            }
         };
 
         AuthorData result = subject.create();

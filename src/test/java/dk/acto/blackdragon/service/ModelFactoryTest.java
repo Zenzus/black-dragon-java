@@ -5,21 +5,19 @@ import io.vavr.collection.List;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
+import java.net.MalformedURLException;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
 
 public class ModelFactoryTest {
 
     @Test(dependsOnGroups = "fetch", groups = "parse")
-    public void testParse(ITestContext context) {
+    public void testParse(ITestContext context) throws MalformedURLException {
 
         String data = String.valueOf(context.getAttribute("data"));
 
-        ModelFactory<Model> subject = new ModelFactory<Model>() {
-            @Override
-            public List<Model> parse(String string) {
-                return null;
-            }
+        ImModel<Model> subject = new ImModel<Model>() {
         };
 
         List<Model> result = subject.parse(data);
